@@ -3,11 +3,11 @@ const fs = require("fs");
 
 // metadata 基础结构
 let metadataSource = {
-  name: "Hassan",
+  name: "Aniza",
   description:
-    "Hassan Calloway is heir to Calloway Arms, one of the world's leading mil-tech suppliers. Ingenious and determined, Hassan has been searching for his missing father, and for SHRAP, since Earthfall.",
+    "Aniza description.",
   image:
-    "https://raw.githubusercontent.com/CheersPals/cheerspalsofficial/main/images/0001.png",
+    "https://dev.ys.finance//images/top-1-70700e3.png",
   attributes: [
     { trait_type: "health", value: 0 },
     { trait_type: "power", value: 0 },
@@ -20,8 +20,8 @@ let metadataSource = {
 (async function () {
   const rarity = { N: 0, R: 0, S: 0, SR: 0, SSR: 0 };
 
-  for (let i = 1; i <= nftTotal; i++) {
-    metadataSource.name = `Hassan #${i}`;
+  for (let i = 0; i < nftTotal; i++) {
+    metadataSource.name = `Aniza #${i}`;
     metadataSource.image = `${basePath}/${randomNum(1, nftImageMax)}.png`;
     metadataSource.attributes[0].value = randomNum(1, 100);
     metadataSource.attributes[1].value = randomNum(1, 100);
@@ -80,7 +80,7 @@ function getLvByExp(x) {
 
 function writeFile(tokenid, metadata) {
   return new Promise((res, rej) => {
-    fs.writeFile(`./metadata/json/${tokenid}.json`, metadata, err => {
+    fs.writeFile(`./metadata/json/${tokenid}`, metadata, err => {
       if (!err) {
         console.log(`#${tokenid}编号 NFT的metadata创建成功！`);
         res();

@@ -1,0 +1,9 @@
+# Compiler files
+cache/
+out/
+.vscode/
+*.DS_Store
+.env
+
+# Node
+node_modules

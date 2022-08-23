@@ -1,8 +1,8 @@
 {
-  "name": "kasoqian",
-  "description": "kasoqian test",
-  "image": "https://img1.baidu.com/it/u=1624676498,3671459173&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-  "external_link": "baidu.com",
+  "name": "Aniza",
+  "description": "Yellow Submarine",
+  "image": "https://dev.ys.finance//images/top-1-70700e3.png",
+  "external_link": "https://dev.ys.finance/nft",
   "seller_fee_basis_points": 1000, 
-  "fee_recipient": "0xDc8611873fab19209f8845714a02eD17e287aB7C"
+  "fee_recipient": "0xB69d057bf23B0fb538b3705C5374840aFFEa375A"
 }
